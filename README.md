@@ -1,13 +1,12 @@
-Overview  {#overview}
+Overview
 ========
 
 Jascon is a Json library for Scala. Although Scala provides a native JSON package for parsing and printing json data, I feel like we need a more powerful set of classes similar to Java's Jackson to be able to work with JSON data, and at the same time take advantage of some of Scala's syntax (operator overloading, for instance). Jascon is an attempt to provide the same functionality and features to Scala developers that Jackson provide to Java developers.
 
-----
 
+<br/>
 This project is under development and incomplete. Please submit pull requests if you want to see a feature included.
 
-----
 
 Usage
 =====
@@ -30,7 +29,7 @@ val arr: JsonArray = JsonArray(sourceStr)
 ```
 
 <br/>
-If you are unsure whether the source string is a JSONObject or a JSONArray use the parse method in Json object:
+If you are unsure whether the source string is a JSONObject or a JSONArray, use the parse method in Json object:
 ```scala
 val js: JsonType = Json.parse(sourceStr)
 if (js.isArray) {
@@ -67,11 +66,12 @@ arr += "green"
 arr += "blue"
 
 // resulting JSON:
-["red", "green", "blue"]
+// ["red", "green", "blue"]
 ```
 
-----
-This guide is under development and more usage examples will be provided later.
+
+<br/>
+This guide is under development and more example usages will be provided later.
 
 
 
